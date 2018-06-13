@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!--
+Template Name: Integral
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+<title>garden guiders</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset="utf-8">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+
+</head>
+<body id="top">
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="../index.html">Garden Guiders</a></h1>
+      <p>Your Ideas Our Designs</p>
+    </div>
+    <!-- ################################################################################################ -->
+    <nav id="mainav" class="fl_right">
+      <ul class="clear">
+	  <li><a href="adminverify.php">Admin</a></li>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a class="drop" href="#">Find Designs</a>
+          <ul>
+            <li><a href="gal1.php">Normal Designs</a></li>
+            <li><a href="findgarden.php">Find Designs by Area</a></li>
+           <!-- <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+            <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>-->
+          </ul>
+        </li>
+       <!-- <li><a class="drop" href="#">Dropdown</a>
+          <ul>
+            <li><a href="#">Level 2</a></li>
+            <li><a class="drop" href="#">Level 2 + Drop</a>
+              <ul>
+                <li><a href="#">Level 3</a></li>
+                <li><a href="#">Level 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>-->
+		
+        <li><a href="aboutus.php">About Us</a></li>
+        <!--<li><a href="#">Contact Us</a></li>-->
+		 <li><a href="feedback.php">Feedback</a></li>
+		
+      </ul>
+    </nav>
+    <!-- ################################################################################################ --> 
+  </header>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<!--<div class="wrapper full_width">
+  <div id="intro">
+<!--###################################################################-->  
+ <!-- <div class="w3-content w3-display-container">-->
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/7.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/12.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/13.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+  
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+    <!-- ################################################################################################ --> 
+   <!-- <img src="images/demo/roadg.jpg" alt=""> 
+    <!-- ################################################################################################  
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <main id="container" class="clear"> 
+    <!-- container body --> 
+    <!-- ################################################################################################ -->
+    <div class="clear">
+      <div class="one_third first">
+        <h2>Raised-bed gardening</h2>
+        <div class="btmspace-30"><a class="imgoverlay" href="#"><img src="images/demo/raisedbed.png" alt=""></a></div>
+        <h3>Raised-bed gardening is a form of gardening in which the soil is formed in three-to-four-foot-wide (1.0–1.2 m) beds, which can be of any length or shape.</h3>
+        
+      </div>
+      <div class="one_third">
+        <h2>Flower garden</h2>
+        <div class="btmspace-30"><a class="imgoverlay" href="#"><img src="images/demo/flowerg.png" alt=""></a></div>
+        <h3>A flower/floral garden is any garden where flowers are grown and displayed.</h3>
+        
+      </div>
+      <div class="one_third">
+        <h2>Water garden</h2>
+        <div class="btmspace-30"><a class="imgoverlay" href="#"><img src="images/demo/waterg.png" alt=""></a></div>
+        <h3>Water gardens, also known as aquatic gardens, are a type of water feature. They can be defined as any interior or exterior landscape or architectural element whose primary purpose is to house, display, or propagate a particular species or variety of aquatic plant.</h3>
+        
+      </div>
+    </div>
+    <!-- ################################################################################################ --> 
+    <!-- / container body -->
+    <div class="clear"></div>
+  </main>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<!--<div class="wrapper row4">
+  <footer id="footer" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div class="one_third first">
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-pinterest" href="#"><i class="fa fa-pinterest"></i></a></li>
+        <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="faicon-linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-flickr" href="#"><i class="fa fa-flickr"></i></a></li>
+        <li><a class="faicon-tumblr" href="#"><i class="fa fa-tumblr"></i></a></li>
+      </ul>
+    </div>
+    <div class="one_third">
+      <p class="heading nospace center"><span class="fa fa-phone pushright"></span> +00 (123) 456 7890</p>
+    </div>
+    <div class="one_third">
+      <p class="heading nospace right"><span class="fa fa-envelope-o pushright"></span> info@yourdomain.com</p>
+    </div>
+    <!-- ################################################################################################ --> 
+  </footer>
+</div>
+
+</body>
+</html>
