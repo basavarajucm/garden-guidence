@@ -1,0 +1,15 @@
+1. make sure xampp server is installed on your system
+
+2. open serverconnect.php file and enter the servername and username and password and database name.
+
+3.start the xampp server start apache and mysql server.
+
+4. then open your favourite browser and type localhost/phpMyadmin
+
+5.Create a database  garden images and import the tables from gardenimages.sql
+
+6. download the project and make a folder in c/xampp/htdocs and put this project files in that folder.
+
+7. go to browser and open localhost/(your project folder name) example: localhost/gardenguidence
+
+8.then the application is ready to use.
